@@ -32,8 +32,11 @@ namespace SiparisOtomasyon.WinUI
             FillGrid();
         }
 
+
+
         private void FillColumnMapping()
         {
+            
             grid.AutoGenerateColumns = false;
             grid.Columns.Add(UICoreUtility.generateDataGridTextBoxColumn("CompanyName","CompanyName", "Müşteri Adı"));
             grid.Columns.Add(UICoreUtility.generateDataGridTextBoxColumn("ContactName", "ContactName", "İlgili Kişi"));

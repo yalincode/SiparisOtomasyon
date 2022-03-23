@@ -76,6 +76,21 @@ namespace SiparisOtomasyon.WinUI.Helper
                 {
                     ((CheckBox)item).Checked = false;
                 }
+                else if (item is GroupBox)
+                {
+                    FormClear(item as GroupBox);
+                }
+                else if (item is DateTimePicker)
+                {
+                    (item as DateTimePicker).Value = DateTime.Now;
+                }
+
+                //switch (item)
+                //{
+                //    case MaskedTextBox mt:
+                //    case TextBox t:
+                //        break;
+                //}
             }
         }
     }

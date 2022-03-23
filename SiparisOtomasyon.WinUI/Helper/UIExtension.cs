@@ -34,5 +34,26 @@ namespace SiparisOtomasyon.WinUI.Helper
 
              
         }
+         public static void SetSelectedValue(this ComboBox combo,object value)
+        {
+            if (value != null)
+            {
+                combo.SelectedValue=value;
+            }
+        }
+
+
+        /// <summary>
+        /// combobox üzerinde eğer bir datasource atanmış ise bu metod ile unboxing yapılmadan değeri geri okunabilir.
+        /// </summary>
+        /// <typeparam name="Tvalue"></typeparam>
+        /// <typeparam name="TData"></typeparam>
+        /// <param name="combo"></param>
+        /// <returns></returns>
+        public static Tvalue? GetValue<Tvalue, TData>(this ComboBox combo) where Tvalue : struct where TData:class
+        {
+            return ((combo.DataSource as List<KeyValue<Tvalue, TData>>)[combo.SelectedIndex]).Value;
+        }
+
     }
 }

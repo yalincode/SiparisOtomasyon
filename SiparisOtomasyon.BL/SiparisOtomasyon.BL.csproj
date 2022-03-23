@@ -52,12 +52,16 @@
     <Compile Include="Absract\ICategoryBusiness.cs" />
     <Compile Include="Absract\ICustomerBusiness.cs" />
     <Compile Include="Absract\IEmployeeBusiness.cs" />
+    <Compile Include="Absract\IOrderBusiness.cs" />
+    <Compile Include="Absract\IOrderDetailBusiness.cs" />
     <Compile Include="Absract\IProductBusiness.cs" />
     <Compile Include="Absract\IShipperBusiness.cs" />
     <Compile Include="Absract\ISupplierBusiness.cs" />
     <Compile Include="Concrete\CategoryBusiness.cs" />
     <Compile Include="Concrete\CustomerBusiness.cs" />
     <Compile Include="Concrete\EmployeeBusiness.cs" />
+    <Compile Include="Concrete\OrderBusiness.cs" />
+    <Compile Include="Concrete\OrderDetailBusiness.cs" />
     <Compile Include="Concrete\ProductBusiness.cs" />
     <Compile Include="Concrete\ShipperBusiness.cs" />
     <Compile Include="Concrete\SupplierBusiness.cs" />

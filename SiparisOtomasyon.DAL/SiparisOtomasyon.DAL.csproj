@@ -54,12 +54,16 @@
     <Compile Include="Abstract\ICategoryRepo.cs" />
     <Compile Include="Abstract\ICustomerRepo.cs" />
     <Compile Include="Abstract\IEmployeeRepo.cs" />
+    <Compile Include="Abstract\IOrderDetailRepo.cs" />
+    <Compile Include="Abstract\IOrderRepo.cs" />
     <Compile Include="Abstract\IProductRepo.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IShipperRepo.cs" />
     <Compile Include="Abstract\ISupplierRepo.cs" />
     <Compile Include="Concrete\CategoryRepo.cs" />
     <Compile Include="Concrete\EmployeeRepo.cs" />
+    <Compile Include="Concrete\OrderDetailRepo.cs" />
+    <Compile Include="Concrete\OrderRepo.cs" />
     <Compile Include="Concrete\ProductRepo.cs" />
     <Compile Include="Concrete\ShipperRepo.cs" />
     <Compile Include="Concrete\SupplierRepo.cs" />
@@ -116,6 +120,8 @@
       <DependentUpon>NortwindModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VM\OrderDetailVM.cs" />
+    <Compile Include="VM\OrderVM.cs" />
     <Compile Include="VM\ProductVM.cs" />
   </ItemGroup>
   <ItemGroup>

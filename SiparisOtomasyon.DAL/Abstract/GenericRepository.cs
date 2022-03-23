@@ -27,6 +27,8 @@ namespace SiparisOtomasyon.DAL.Abstract
             }
         }
 
+        //IBAGLANTI DB     NC : IBAGLANTI  DUPPER : IBAGLANTI  ORACLE: IBAGLANTI       hASSET<string> LİST  =  ICOLLECTİON>STRİNG> LİST
+
         //DbSet<T> queryItem = null; //Customerları çağırırken DbSet üzerinden çağrıldığı için queryler bunun üstünden yürür.
 
         public GenericRepository()
@@ -41,6 +43,7 @@ namespace SiparisOtomasyon.DAL.Abstract
 
         public virtual bool Delete(T1 id)
         {
+           
             var dbItem = DB.Set<T>().Find(id);
             if (dbItem != null)
             {

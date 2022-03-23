@@ -1,5 +1,6 @@
 ﻿using SiparisOtomasyon.BL.Absract;
 using SiparisOtomasyon.DAL.Abstract;
+using SiparisOtomasyon.DAL.Concrete;
 using SiparisOtomasyon.DAL.Context;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,10 @@ namespace SiparisOtomasyon.BL.Concrete
     public class ShipperBusiness : IShipperBusiness
     {
         IShipperRepo shipperRepo;
+        public ShipperBusiness()
+        {
+            shipperRepo = new ShipperRepo();
+        }
         public void Add(Shippers item)
         {
             shipperRepo.Add(item);
